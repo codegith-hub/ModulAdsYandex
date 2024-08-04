@@ -2,6 +2,12 @@ package com.adsmedia.adsmodul;
 
 
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.content.Context;
+import android.content.Intent;
+import android.content.SharedPreferences;
+import android.net.Uri;
+import android.preference.PreferenceManager;
 import android.util.DisplayMetrics;
 import android.view.Display;
 import android.widget.RelativeLayout;
@@ -34,7 +40,9 @@ public class AdsHelper {
     public static boolean debugMode;
     public static boolean directData = false;
 
-    public static void gdpr(Activity activity, Boolean childDirected, String keypos) {
+    public static void gdpr(Activity activity, Boolean childDirected, String keypos,String gameAppId) {
+
+
     }
 
     public static void initializeAds(Activity activity, int pos) {
